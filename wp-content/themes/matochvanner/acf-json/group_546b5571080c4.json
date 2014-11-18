@@ -1,0 +1,54 @@
+{
+  "key":"group_546b5571080c4",
+  "title":"Relaterade inl\u00e4gg",
+  "fields":[
+    {
+      "key":"field_546b558f2081e",
+      "label":"Relaterat",
+      "name":"relaterat",
+      "prefix":"",
+      "type":"repeater",
+      "instructions":"",
+      "required":0,
+      "conditional_logic":0,
+      "min":"",
+      "max":"",
+      "layout":"table",
+      "button_label":"Add Row",
+      "sub_fields":[
+        {
+          "key":"field_546b55bc2081f",
+          "label":"inl\u00e4gg",
+          "name":"inlagg",
+          "prefix":"",
+          "type":"post_object",
+          "instructions":"",
+          "required":0,
+          "conditional_logic":0,
+          "column_width":"",
+          "post_type":"",
+          "taxonomy":"",
+          "allow_null":0,
+          "multiple":0,
+          "return_format":"id",
+          "ui":1
+        }
+      ]
+    }
+  ],
+  "location":[
+    [
+      {
+        "param":"post_type",
+        "operator":"==",
+        "value":"post"
+      }
+    ]
+  ],
+  "menu_order":0,
+  "position":"normal",
+  "style":"default",
+  "label_placement":"top",
+  "instruction_placement":"label",
+  "hide_on_screen":""
+}

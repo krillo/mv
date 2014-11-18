@@ -1,0 +1,68 @@
+{
+  "key":"group_546b2f9e5d6d2",
+  "title":"Anv\u00e4ndare",
+  "fields":[
+    {
+      "key":"field_546b2fa661ca7",
+      "label":"Rund bild",
+      "name":"image",
+      "prefix":"",
+      "type":"image",
+      "instructions":"Detta \u00e4r den runda blogg-profil bilden p\u00e5 f\u00f6rstasidan 70x70 px",
+      "required":0,
+      "conditional_logic":0,
+      "return_format":"url",
+      "preview_size":"thumbnail",
+      "library":"all"
+    },
+    {
+      "key":"field_546b300561ca8",
+      "label":"Profilbild",
+      "name":"profilbild",
+      "prefix":"",
+      "type":"image",
+      "instructions":"Detta \u00e4r profilbilden p\u00e5 bloggsidan ",
+      "required":0,
+      "conditional_logic":0,
+      "return_format":"url",
+      "preview_size":"thumbnail",
+      "library":"all"
+    },
+    {
+      "key":"field_546b303761ca9",
+      "label":"Biografi",
+      "name":"biografi",
+      "prefix":"",
+      "type":"wysiwyg",
+      "instructions":"Skriv din biografi h\u00e4r",
+      "required":0,
+      "conditional_logic":0,
+      "default_value":"",
+      "tabs":"all",
+      "toolbar":"full",
+      "media_upload":1
+    }
+  ],
+  "location":[
+    [
+      {
+        "param":"user_role",
+        "operator":"==",
+        "value":"author"
+      }
+    ],
+    [
+      {
+        "param":"user_role",
+        "operator":"==",
+        "value":"administrator"
+      }
+    ]
+  ],
+  "menu_order":0,
+  "position":"normal",
+  "style":"default",
+  "label_placement":"top",
+  "instruction_placement":"label",
+  "hide_on_screen":""
+}

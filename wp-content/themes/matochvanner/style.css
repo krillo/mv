@@ -1,0 +1,172 @@
+/*
+Theme Name: matochvanner
+Version: 1.0
+Description: This is the theme for magasinspring.se It is a childtheme to Reptilo which is based on Bootstrap 3, The theme won't work without Reptilo 
+Author: Kristian Erendi, Henric Jöraas
+Author URI: http://reptilo.se http://www.oresundswebb.se/  
+Template: reptilo
+*/
+
+
+
+#logo-colapsed{width:280px;float:left;margin-right: 15px;}
+#logo-colapsed a img{width: 100%;padding-top: 25px;}
+
+body{color: #222;font-family: 'Open Sans', sans-serif;background-color: #f6f6f6;}
+body.home {background-image: none;}
+img {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  /*min-width: 100%; */
+  max-width: inintial;
+}
+
+article img {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  max-width: inintial;
+  height: auto;
+}
+
+
+
+h1{font-family: 'Georgia', serif; color: #222; font-size: 38px;}
+p{line-height: 24px}
+/*
+.container {max-width: 1170px;padding: 0;}
+.row{margin-left: 0;margin-right: 0;}
+*/
+
+/*ads*/
+#ad1{margin-top: 30px;margin-bottom: 20px;}
+
+
+/*article*/
+article{border-bottom: 1px dotted #C0BEBE;margin-bottom: 15px;}
+/*.article-small img{float:left;width: auto; min-width: auto;}*/
+#omslag-box img{float:left;max-width: none; min-width: initial; width:auto;}
+
+/*pub-info*/
+.pub-info{color: #C0BEBE;padding-bottom:5px;font-size: 13px;}
+.pub-info-small{color: #C0BEBE;padding-bottom: 0;font-size: 11px;display:none;}
+.pub-info-small i{margin-right: 4px;}
+.pub-info i{margin-left: 20px;margin-right: 4px;}
+.pub-info i.fa-calendar-o{margin-left: 0;}
+
+.article-cat, .article-cat a{font-weight: bold;color:#f59d00;}
+.read-more{color:#f59d00;}
+
+
+
+/*sidebar header*/
+.sidebar-header{
+  background-image: url("img/bg_sidebar.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-size: 14px;
+  color: #FFF;
+  padding-left: 7px;
+  padding: 3px 0 3px 7px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  list-style: none;
+  margin-bottom: 8px;
+}
+div.sidebar-header i{padding-right: 1px; font-size: 16px;}
+li.widget{list-style: none;margin-bottom: 25px;font-size: 12px;}
+li.widget {list-style: none;margin-bottom: 25px;}
+
+/*omslag*/
+#omslag-box img{width:90px;height: auto;float:left;margin-right: 10px;}
+#omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
+#omslag-box ul{padding:0; list-style: none;margin-top: 40px;}
+#omslag-box ul i {margin-right: 5px;}
+
+
+#spring-header-container{overflow:hidden;border-bottom:solid #BEBEBE 1px;margin:30px 0;}
+#spring-container{border: solid #BEBEBE;border-width: 0 1px 1px;background: #FFF;box-shadow: 0 1px 5px 0 #c1c1c1;}
+#spring-container, #ad1{padding-left: 30px;padding-right: 30px}
+
+
+/*ads*/
+.ad-tag {
+  background: url('img/annons.png') no-repeat;
+  display: block;
+  height: 11px;
+  text-indent: -999999px;
+  white-space: nowrap;
+  width: 49px;
+}
+.adrotate-loop{padding-bottom: 15px;margin-bottom: 15px;border-bottom: 1px dotted #C0BEBE;}
+
+.spring-widget{margin-bottom: 15px;}
+
+
+/*litteraturtips*/
+.posttype-container{background-color: #fafafa;border: #e6e6e6 solid 1px;padding:5px;overflow:hidden; font-size: 11px;}
+.posttype-img{float:left;overflow:hidden;margin-right: 5px;}
+.posttype-container img{padding: 0;  -moz-border-radius: 0;-webkit-border-radius: 0;-khtml-border-radius: 0;border-radius: 0;}
+.posttype-content{float:left;}
+.zebra{background-color: #f0f0f0;}
+
+/*blogg-puff*/
+.blogg-puff {border-bottom: 1px dotted #C0BEBE;padding-bottom: 10px;min-height: 81px}
+.blogg-puff img{width:70px;height:70px;float:right;min-width: default;margin-left: 10px;}
+.blogg-puff h3{font-size: 13px; margin-bottom: 5px;margin-top: 9px;}
+.blogg-puff p{font-size: 12px;line-height: 14px; margin-bottom: 2px;}
+.blogg-puff a{font-size: 12px;line-height: 14px;}
+
+/*cat-puff*/
+.cat-puff {border-bottom: 1px dotted #C0BEBE;padding-bottom: 10px;min-height: 81px}
+.cat-puff img{width:70px;height:70px;float:right;min-width: default;margin-left: 10px;}
+.cat-puff h3{font-size: 13px; margin-bottom: 5px;margin-top: 9px;}
+.cat-puff p{font-size: 12px;line-height: 14px; margin-bottom: 2px;}
+.cat-puff a{font-size: 12px;line-height: 14px;}
+
+.devider-space{margin-bottom: 20px;}
+
+/*footer*/
+#footer-logo img{float:left;}
+#footer-img img{float:right;margin-top: -40px;}
+#footer-address img{float:left;width:76px;margin-right:20px;}
+
+
+
+/*HenkeStyle*/
+/*MashMenu*/
+.mashmenu .sub-channel{min-height:225px;}
+
+
+@media (min-width: 990px) and (max-width: 1199px) {
+  .posttype-container {font-size: 8px;}  
+}
+
+
+/* contact 7 nyhetsbrev */
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-email.spring-form-sidebar{width:68%;}
+input.wpcf7-form-control.wpcf7-submit.spring-form-sidebar-button{margin-top: 0;}
+
+
+
+/*image caption*/
+.wp-caption {padding: 0;border:none;}
+
+.archive h2{font-size:20px;}
+.sponsor img{text-align: center;}
+.sponsor a{overflow:hidden;}
+
+.sponsor img{min-width: 100%;padding-bottom: 15px;}
+body.archive article .archive-content, body.search article .archive-content{border-bottom:none;}
+
+.rep-byline{border-bottom: 1px dotted #C0BEBE;padding: 12px 0;overflow:hidden;font-size: 12px;}
+article.post .rep-byline img{margin-right: 10px;float:left;width:40px;height:40px;margin:0 10px 0 0;}
+.rep-byline-contact{float:left;width:200px;}
+.rep-byline-contact-name{font-weight: bold;}
+.rep-byline-date{float:right;}
+.rep-byline-date i {margin-right: 5px;}
+
+
+/* carousel */
+.carousel img {width: 100%;}

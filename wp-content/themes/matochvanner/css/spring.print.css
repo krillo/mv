@@ -1,0 +1,25 @@
+/*
+Description: The print css for Spring
+Author: Kristian Erendi
+Author URI: http://reptilo.se/
+Date: 2014-05-29
+*/
+
+body{padding:0;}
+a[href]:after {content: none !important;}
+
+#ssba {display: none;}
+.yarpp-related {display: none;}
+div#fbSEOComments {display: none;}
+.article-small {display: none;}
+div#article-feed {display: none;}
+.ad-tag{display: none;}
+.adrotate-loop{display: none;}
+#ad1{display: none;}
+.mashmenu{display: none;}
+#sidebar1{display: none;}
+#sidebar2{display: none;}
+#header-sponsor-widget{display: none;}
+#omslag-box {display: none;}
+footer.row.clearfix{display: none;}
+.pub-info{display: none;}
