@@ -6,17 +6,16 @@ function enqueue_parent_theme_style() {
 }
 
 /**
- * Matochvänner
+ * Spring
  * Author: Kristian Erendi
  * Author URI: http://reptilo.se/
- * Date: 2014-11-19
+ * Date: 2014-02-07
  * @package WordPress
- * @subpackage matochvanner
- * @since Matochvanner 1.0
+ * @subpackage spring
+ * @since Spring 1.0
  */
 include_once 'bin/Prenpuff.php';
 include_once 'bin/Omslag.php';
-include_once 'bin/Recept.php';
 include_once get_template_directory() . "/bin/ReptiloCarousel.php";
 //include_once get_template_directory() . "/bin/ReptiloFAQ.php";
 
@@ -127,7 +126,9 @@ add_action('widgets_init', 'spring_widgets_init');
  */
 function spring_enqueue_scripts() {
   wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', null, '2014-06-13');
-  wp_enqueue_style('matochvanner.print', get_stylesheet_directory_uri() . '/css/matochvanner.print.css', array(), '2014-11-19', 'print');
+  wp_enqueue_style('style.henke', get_stylesheet_directory_uri() . '/css/style.henke.css', array('woodojo-social-widgets', 'fbSEOwpcomments', 'fbSEOStylesheet', 'style', 'font_awesome', 'thickbox'), '2014-04-03');
+  wp_enqueue_style('style.mashmenu', get_stylesheet_directory_uri() . '/css/style.mashmenu.css', array('woodojo-social-widgets', 'fbSEOwpcomments', 'fbSEOStylesheet', 'style', 'font_awesome', 'thickbox'), '2014-03-26');
+  wp_enqueue_style('spring.print', get_stylesheet_directory_uri() . '/css/spring.print.css', array(), '2014-05-29', 'print');
 }
 
 add_action('wp_enqueue_scripts', 'spring_enqueue_scripts');

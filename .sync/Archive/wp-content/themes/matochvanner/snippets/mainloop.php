@@ -5,7 +5,7 @@
  */
 $args = array(
     'post_type' => 'post',
-    'posts_per_page' => 5,
+    'posts_per_page' => 10,
     'cat' => '-320,-132',    //-320 = Bloggar -132 = BLOGGAR 
     'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 );
@@ -20,14 +20,17 @@ if (have_posts()):
       case 1:
         big();
         break;
-      case 3:
+      case 4:
         ad1();
         big();
         break;
-      case 6:
+      case 5:
         ad();
         small();
-        break;     
+        break;
+      case 8:
+        big();
+        break;      
       default:
         small();
         break;

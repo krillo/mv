@@ -127,7 +127,7 @@ add_action('widgets_init', 'spring_widgets_init');
  */
 function spring_enqueue_scripts() {
   wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', null, '2014-06-13');
-  wp_enqueue_style('matochvanner.print', get_stylesheet_directory_uri() . '/css/matochvanner.print.css', array(), '2014-11-19', 'print');
+  wp_enqueue_style('spring.print', get_stylesheet_directory_uri() . '/css/spring.print.css', array(), '2014-05-29', 'print');
 }
 
 add_action('wp_enqueue_scripts', 'spring_enqueue_scripts');

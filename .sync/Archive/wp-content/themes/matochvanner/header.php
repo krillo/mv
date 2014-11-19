@@ -57,7 +57,7 @@
                 <div class="col-md-9 column" id="logo">
                   <a href="<?php echo home_url('/'); ?>"><img alt="Mat och vänner" src="<?php echo get_stylesheet_directory_uri(); ?>/img/large_store_banner.jpg" /></a>
                 </div>
-                <div class="col-md-3 column " id="omslag-box">
+                <div class="col-md-3 column " id="omslag-box" style="background-color: pink;">
                   <?php
                   global $omslag;
                   if (method_exists($omslag, 'printOmslag'))

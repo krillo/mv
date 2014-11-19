@@ -43,6 +43,13 @@
         "operator":"==",
         "value":"post"
       }
+    ],
+    [
+      {
+        "param":"post_type",
+        "operator":"==",
+        "value":"recept"
+      }
     ]
   ],
   "menu_order":0,

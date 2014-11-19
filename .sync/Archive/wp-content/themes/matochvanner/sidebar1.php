@@ -12,7 +12,7 @@
   }
   ?>
   <div class="clearfix"></div>
-  <div class="blogpuffs-wrapper"><?php include 'snippets/blogpuffs.php'; ?></div>
+  <?php include 'snippets/blogpuffs.php'; ?>   
   <div class="clearfix"></div>
   <div>
     <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar1")) : endif; ?>

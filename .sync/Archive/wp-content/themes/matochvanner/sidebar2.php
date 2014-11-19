@@ -11,7 +11,7 @@
   <?php global $rc; if (method_exists($rc,'rep_carousel')) $rc->rep_carousel('rep-carousel', false); ?>  
   
   <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar22")) : endif; ?>  
-  <div class="catlist-wrapper"><?php $category_name = 'prylar'; $nbr = 5; include 'snippets/catlist.php'; ?></div>
+  <?php $category_name = 'prylar'; $nbr = 5; include 'snippets/catlist.php'; ?>   
   <div class="clearfix"></div>  
   <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar23")) : endif; ?>  
   

@@ -19,11 +19,11 @@ a {text-decoration: none;color: #cc0000;}
 .read-more, a:hover{text-decoration: underline;color: #dd2525;}
 
 /* Header */
-#spring-header-container{overflow:hidden;margin:30px 0;}
+#spring-header-container{overflow:hidden;border-bottom:solid #BEBEBE 1px;margin:30px 0;}
 #logo{padding: 10px;background-color: #fff}
-#omslag-box {background-color: #828282}
-.omslag-wrapper{padding:10px;background-color: #fff;}
-#omslag-box img{}
+#omslag-box {background-color: #fff}
+.omslag-text{padding:10px;}
+#omslag-box img{padding: 10px;}
 #omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
 #omslag-box ul{padding:0; list-style: none;margin-top: 40px;}
 #omslag-box ul i {margin-right: 5px;}

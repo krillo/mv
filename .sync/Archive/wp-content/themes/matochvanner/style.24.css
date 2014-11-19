@@ -21,8 +21,8 @@ a {text-decoration: none;color: #cc0000;}
 /* Header */
 #spring-header-container{overflow:hidden;margin:30px 0;}
 #logo{padding: 10px;background-color: #fff}
-#omslag-box {background-color: #828282}
-.omslag-wrapper{padding:10px;background-color: #fff;}
+#omslag-box {background-color: #fff}
+.omslag-wrapper{padding:10px;}
 #omslag-box img{}
 #omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
 #omslag-box ul{padding:0; list-style: none;margin-top: 40px;}

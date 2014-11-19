@@ -1,61 +1,25 @@
 /*
 Theme Name: matochvanner
 Version: 1.0
-Description: This is the theme for matochvanner.se It is a childtheme to Reptilo which is based on Bootstrap 3, The theme won't work without Reptilo 
+Description: This is the theme for magasinspring.se It is a childtheme to Reptilo which is based on Bootstrap 3, The theme won't work without Reptilo 
 Author: Kristian Erendi, Henric Jöraas
 Author URI: http://reptilo.se http://www.oresundswebb.se/  
 Template: reptilo
 */
 
 
-/* Home customization */
-body{color: #222;font-family:Georgia,"Times New Roman",Times,Serif ;background-color: #828282;}
+
+#logo-colapsed{width:280px;float:left;margin-right: 15px;}
+#logo-colapsed a img{width: 100%;padding-top: 25px;}
+
+body{color: #222;font-family: 'Open Sans', sans-serif;background-color: black;}
 body.home {background-image: none;}
-h1{font-family: Helvetica,arial,sans-serif; color: #222; font-size: 38px;}
-h2{}
-h3{}
-p{line-height: 21px;font-size: 14px;letter-spacing: 0.01em;}
-a {text-decoration: none;color: #cc0000;}
-.read-more, a:hover{text-decoration: underline;color: #dd2525;}
-
-/* Header */
-#spring-header-container{overflow:hidden;margin:30px 0;}
-#logo{padding: 10px;background-color: #fff}
-#omslag-box {background-color: #828282}
-.omslag-wrapper{padding:10px;background-color: #fff;}
-#omslag-box img{}
-#omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
-#omslag-box ul{padding:0; list-style: none;margin-top: 40px;}
-#omslag-box ul i {margin-right: 5px;}
-
-/* Container */
-.container {background-color: #828282;}
-#spring-container {padding:0;background-color:#828282;}
-article{background-color: #fff;padding: 10px 10px 10px 10px;margin-bottom:15px ;}
-
-/* Big article */
-h1.h1-big{font-family: 'Helvetica Neue',Helvetiva, arial,sans-serif;color: #000;font-size: 28px;letter-spacing: 0.02em;}
-
-/* Small article */
-.article-small img {width:190px;height:130px;float:left;padding-right: 10px;margin-bottom: 10px;}
-article.post img {margin-bottom: 15px;}
-.article-small h1{font-size: 18px;letter-spacing: 0.02em; margin-bottom: 13px;}
-.article-small p{font-size: 13px; line-height: 18px}
-
-/* Sidebar */
-.catlist-wrapper{background-color:#fff;}
-.blogpuffs-wrapper{background-color:#fff;}
-.spring-widget{margin-bottom: 15px;background-color:#fff;}
-
-
 img {
   background-color: transparent;
   border: none;
   padding: 0;
   /*min-width: 100%; */
   max-width: inintial;
-  height: auto;
-  border-radius: none;
 }
 
 article img {
@@ -68,7 +32,8 @@ article img {
 
 
 
-
+h1{font-family: 'Georgia', serif; color: #222; font-size: 38px;}
+p{line-height: 24px}
 /*
 .container {max-width: 1170px;padding: 0;}
 .row{margin-left: 0;margin-right: 0;}
@@ -76,10 +41,12 @@ article img {
 
 /*ads*/
 #ad1{margin-top: 30px;margin-bottom: 20px;}
-.ad-sidebar{}
-.ad-sidebar-container{background-color:#828282; }
 
 
+/*article*/
+article{border-bottom: 1px dotted #C0BEBE;margin-bottom: 15px;}
+/*.article-small img{float:left;width: auto; min-width: auto;}*/
+#omslag-box img{float:left;max-width: none; min-width: initial; width:auto;}
 
 /*pub-info*/
 .pub-info{color: #C0BEBE;padding-bottom:5px;font-size: 13px;}
@@ -88,15 +55,39 @@ article img {
 .pub-info i{margin-left: 20px;margin-right: 4px;}
 .pub-info i.fa-calendar-o{margin-left: 0;}
 
-.article-cat, .article-cat a {font-weight: bold;text-transform: uppercase;font-size: 12px;letter-spacing: 0.02em;}
+.article-cat, .article-cat a{font-weight: bold;color:#f59d00;}
+.read-more{color:#f59d00;}
 
 
 
 /*sidebar header*/
-.sidebar-header{background-image: none;color: #000;border-bottom: 1px solid #000;padding-left: 0;font-size: 15px;padding: 3px 0 3px 7px;font-weight: bold;letter-spacing: 0.06em;list-style: none;margin-bottom: 8px;}
+.sidebar-header{
+  background-image: url("img/bg_sidebar.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-size: 14px;
+  color: #FFF;
+  padding-left: 7px;
+  padding: 3px 0 3px 7px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  list-style: none;
+  margin-bottom: 8px;
+}
 div.sidebar-header i{padding-right: 1px; font-size: 16px;}
 li.widget{list-style: none;margin-bottom: 25px;font-size: 12px;}
 li.widget {list-style: none;margin-bottom: 25px;}
+
+/*omslag*/
+#omslag-box img{width:90px;height: auto;float:left;margin-right: 10px;}
+#omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
+#omslag-box ul{padding:0; list-style: none;margin-top: 40px;}
+#omslag-box ul i {margin-right: 5px;}
+
+
+#spring-header-container{overflow:hidden;border-bottom:solid #BEBEBE 1px;margin:30px 0;}
+#spring-container{border: solid #BEBEBE;border-width: 0 1px 1px;background: #FFF;box-shadow: 0 1px 5px 0 #c1c1c1;}
+#spring-container, #ad1{padding-left: 30px;padding-right: 30px}
 
 
 /*ads*/
@@ -110,14 +101,22 @@ li.widget {list-style: none;margin-bottom: 25px;}
 }
 .adrotate-loop{padding-bottom: 15px;margin-bottom: 15px;border-bottom: 1px dotted #C0BEBE;}
 
+.spring-widget{margin-bottom: 15px;}
 
+
+/*litteraturtips*/
+.posttype-container{background-color: #fafafa;border: #e6e6e6 solid 1px;padding:5px;overflow:hidden; font-size: 11px;}
+.posttype-img{float:left;overflow:hidden;margin-right: 5px;}
+.posttype-container img{padding: 0;  -moz-border-radius: 0;-webkit-border-radius: 0;-khtml-border-radius: 0;border-radius: 0;}
+.posttype-content{float:left;}
+.zebra{background-color: #f0f0f0;}
 
 /*blogg-puff*/
 .blogg-puff {border-bottom: 1px dotted #C0BEBE;padding-bottom: 10px;min-height: 81px}
 .blogg-puff img{width:70px;height:70px;float:right;min-width: default;margin-left: 10px;}
 .blogg-puff h3{font-size: 13px; margin-bottom: 5px;margin-top: 9px;}
 .blogg-puff p{font-size: 12px;line-height: 14px; margin-bottom: 2px;}
-.blogg-puff a {font-size: 12px;line-height: 14px;color: #cc0000;}
+.blogg-puff a{font-size: 12px;line-height: 14px;}
 
 /*cat-puff*/
 .cat-puff {border-bottom: 1px dotted #C0BEBE;padding-bottom: 10px;min-height: 81px}
@@ -132,6 +131,22 @@ li.widget {list-style: none;margin-bottom: 25px;}
 #footer-logo img{float:left;}
 #footer-img img{float:right;margin-top: -40px;}
 #footer-address img{float:left;width:76px;margin-right:20px;}
+
+
+
+/*HenkeStyle*/
+/*MashMenu*/
+.mashmenu .sub-channel{min-height:225px;}
+
+
+@media (min-width: 990px) and (max-width: 1199px) {
+  .posttype-container {font-size: 8px;}  
+}
+
+
+/* contact 7 nyhetsbrev */
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-email.spring-form-sidebar{width:68%;}
+input.wpcf7-form-control.wpcf7-submit.spring-form-sidebar-button{margin-top: 0;}
 
 
 
@@ -155,60 +170,3 @@ article.post .rep-byline img{margin-right: 10px;float:left;width:40px;height:40p
 
 /* carousel */
 .carousel img {width: 100%;}
-
-
-
-
-/* Media Device Size */
-
-@media (min-width: 485px) and (max-width: 768px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 991px) and (max-width:1200px){
-
-}
-
-@media (min-width: 1200px){
-
-}
-
-@media (min-width: 1092px) and (max-width:1201px){
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

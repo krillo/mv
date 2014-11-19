@@ -1,51 +1,30 @@
 /*
 Theme Name: matochvanner
 Version: 1.0
-Description: This is the theme for matochvanner.se It is a childtheme to Reptilo which is based on Bootstrap 3, The theme won't work without Reptilo 
+Description: This is the theme for magasinspring.se It is a childtheme to Reptilo which is based on Bootstrap 3, The theme won't work without Reptilo 
 Author: Kristian Erendi, Henric Jöraas
 Author URI: http://reptilo.se http://www.oresundswebb.se/  
 Template: reptilo
 */
 
 
+
+#logo-colapsed{width:280px;float:left;margin-right: 15px;}
+#logo-colapsed a img{width: 100%;padding-top: 25px;}
+
+
 /* Home customization */
 body{color: #222;font-family:Georgia,"Times New Roman",Times,Serif ;background-color: #828282;}
 body.home {background-image: none;}
+.container{background-color: #828282;}
+#spring-container{padding:0;background-color:#828282;}
+article{background-color: #fff;padding: 5px 5px 5px 5px;}
 h1{font-family: Helvetica,arial,sans-serif; color: #222; font-size: 38px;}
 h2{}
 h3{}
 p{line-height: 21px;font-size: 14px;letter-spacing: 0.01em;}
 a {text-decoration: none;color: #cc0000;}
 .read-more, a:hover{text-decoration: underline;color: #dd2525;}
-
-/* Header */
-#spring-header-container{overflow:hidden;margin:30px 0;}
-#logo{padding: 10px;background-color: #fff}
-#omslag-box {background-color: #828282}
-.omslag-wrapper{padding:10px;background-color: #fff;}
-#omslag-box img{}
-#omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
-#omslag-box ul{padding:0; list-style: none;margin-top: 40px;}
-#omslag-box ul i {margin-right: 5px;}
-
-/* Container */
-.container {background-color: #828282;}
-#spring-container {padding:0;background-color:#828282;}
-article{background-color: #fff;padding: 10px 10px 10px 10px;margin-bottom:15px ;}
-
-/* Big article */
-h1.h1-big{font-family: 'Helvetica Neue',Helvetiva, arial,sans-serif;color: #000;font-size: 28px;letter-spacing: 0.02em;}
-
-/* Small article */
-.article-small img {width:190px;height:130px;float:left;padding-right: 10px;margin-bottom: 10px;}
-article.post img {margin-bottom: 15px;}
-.article-small h1{font-size: 18px;letter-spacing: 0.02em; margin-bottom: 13px;}
-.article-small p{font-size: 13px; line-height: 18px}
-
-/* Sidebar */
-.catlist-wrapper{background-color:#fff;}
-.blogpuffs-wrapper{background-color:#fff;}
-.spring-widget{margin-bottom: 15px;background-color:#fff;}
 
 
 img {
@@ -55,7 +34,6 @@ img {
   /*min-width: 100%; */
   max-width: inintial;
   height: auto;
-  border-radius: none;
 }
 
 article img {
@@ -76,10 +54,12 @@ article img {
 
 /*ads*/
 #ad1{margin-top: 30px;margin-bottom: 20px;}
-.ad-sidebar{}
-.ad-sidebar-container{background-color:#828282; }
 
 
+/*article*/
+article{border-bottom: 1px dotted #C0BEBE;margin-bottom: 15px;}
+/*.article-small img{float:left;width: auto; min-width: auto;}*/
+#omslag-box img{float:left;max-width: none; min-width: initial; width:auto;}
 
 /*pub-info*/
 .pub-info{color: #C0BEBE;padding-bottom:5px;font-size: 13px;}
@@ -89,6 +69,7 @@ article img {
 .pub-info i.fa-calendar-o{margin-left: 0;}
 
 .article-cat, .article-cat a {font-weight: bold;text-transform: uppercase;font-size: 12px;letter-spacing: 0.02em;}
+.read-more{color:;}
 
 
 
@@ -97,6 +78,17 @@ article img {
 div.sidebar-header i{padding-right: 1px; font-size: 16px;}
 li.widget{list-style: none;margin-bottom: 25px;font-size: 12px;}
 li.widget {list-style: none;margin-bottom: 25px;}
+
+/*omslag*/
+#omslag-box img{width:90px;height: auto;float:left;margin-right: 10px;}
+#omslag-box h2{margin-top: 0;margin-bottom: 0;font-size: 16px;}
+#omslag-box ul{padding:0; list-style: none;margin-top: 40px;}
+#omslag-box ul i {margin-right: 5px;}
+
+
+#spring-header-container{overflow:hidden;border-bottom:solid #BEBEBE 1px;margin:30px 0;}
+#spring-container{border: solid #BEBEBE;border-width: 0 1px 1px;background: #FFF;box-shadow: 0 1px 5px 0 #c1c1c1;}
+#spring-container, #ad1{padding-left: 30px;padding-right: 30px}
 
 
 /*ads*/
@@ -110,7 +102,7 @@ li.widget {list-style: none;margin-bottom: 25px;}
 }
 .adrotate-loop{padding-bottom: 15px;margin-bottom: 15px;border-bottom: 1px dotted #C0BEBE;}
 
-
+.spring-widget{margin-bottom: 15px;}
 
 /*blogg-puff*/
 .blogg-puff {border-bottom: 1px dotted #C0BEBE;padding-bottom: 10px;min-height: 81px}
