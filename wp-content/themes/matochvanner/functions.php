@@ -18,6 +18,7 @@ include_once 'bin/Prenpuff.php';
 include_once 'bin/Omslag.php';
 include_once 'bin/Recept.php';
 include_once get_template_directory() . "/bin/ReptiloCarousel.php";
+include_once get_template_directory() . "/bin/ReptiloFeaturedSlides.php";
 //include_once get_template_directory() . "/bin/ReptiloFAQ.php";
 
 

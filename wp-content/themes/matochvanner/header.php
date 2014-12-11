@@ -55,7 +55,7 @@
             <div id="spring-header-container">
               <div class="row clearfix">
                 <div class="col-md-9 column" id="logo">
-                  <a href="<?php echo home_url('/'); ?>"><img alt="Mat och vänner" src="<?php echo get_stylesheet_directory_uri(); ?>/img/large_store_banner.jpg" /></a>
+                  <div class="content-box"><a href="<?php echo home_url('/'); ?>"><img alt="Mat och vänner" src="<?php echo get_stylesheet_directory_uri(); ?>/img/large_store_banner.jpg" /></a></div>
                 </div>
                 <div class="col-md-3 column " id="omslag-box">
                   <?php

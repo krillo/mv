@@ -44,12 +44,11 @@ endif;
 function big() {
   ?>
   <div class="row">
-    <div class="col-md-12" id="article-feed">
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="col-md-12" id="article-feed" >
+      <article id="post-<?php the_ID(); ?>" <?php post_class('content-box'); ?>>
         <a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail('full'); ?></a>
         <a href="<?php the_permalink(); ?>" ><h1 class="h1-big"><?php the_title(); ?></h1></a>
-        <span class="article-cat"><?php $showCat = false; include('pubinfo.php'); ?></span>
-        <p><span class="article-cat"><?php echo rep_GetOneCategory(); ?></span>&nbsp;&nbsp;<?php echo get_the_excerpt(); ?>
+        <p><span class="article-cat"><?php echo rep_GetOneCategory(); ?>&nbsp;<time pubdate="pubdate"><?php echo get_the_date(); ?></time></span>&nbsp;&nbsp;<?php echo get_the_excerpt(); ?>
           <a href="<?php the_permalink(); ?>" ><span class="read-more">Läs mer <i class="fa fa-angle-double-right"></i></span></a>
         </p>
       </article>
@@ -63,11 +62,10 @@ function small() {
   ?>
   <div class="row">
     <div class="col-md-12">
-      <article id="post-<?php the_ID(); ?>" <?php post_class('article-small'); ?>>
+      <article id="post-<?php the_ID(); ?>" <?php post_class('article-small content-box'); ?>>
         <a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail('thumbnail'); ?></a>
         <a href="<?php the_permalink(); ?>" ><h1><?php the_title(); ?></h1></a>
-        <span class="article-cat"><?php $showCat = false; include('pubinfo.php'); ?></span>
-        <p><span class="article-cat"><?php echo rep_GetOneCategory(); ?></span>&nbsp;&nbsp;<?php echo $excerpt; ?>
+        <p><span class="article-cat"><?php echo rep_GetOneCategory(); ?></span>&nbsp;&nbsp;<time pubdate="pubdate"><?php echo get_the_date(); ?></time>&nbsp;&nbsp;<?php echo $excerpt; ?>
           <a href="<?php the_permalink(); ?>" ><span class="read-more">Läs mer <i class="fa fa-angle-double-right"></i></span></a>
         </p>
       </article>

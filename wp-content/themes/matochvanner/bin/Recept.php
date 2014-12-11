@@ -56,7 +56,8 @@ class Recept {
       'has_archive' => true,
       'hierarchical' => false,
       'menu_position' => null,
-      'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+      'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+      'taxonomies' => array('post_tag')
   );
   register_post_type('recept', $args);
 }
@@ -99,13 +100,6 @@ function create_taxonomy() {
   );
   register_taxonomy('receptkategori', array('recept'), $args);
 }
-
-
-
-
-
-
-
 
 
 

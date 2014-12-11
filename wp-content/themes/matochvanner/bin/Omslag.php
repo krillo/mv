@@ -72,9 +72,9 @@ class Omslag {
         $number = get_field('nummer');
         $year = get_field('year');
         $out .= <<<OUT
-                <div class="omslag-wrapper">
+                <div class="content-box">
                   $img               
-                  <h2>Nummer $number ute nu! Nr </h2>
+                  <h2>Nytt nummer ute nu!</h2>
                   <ul class="omslag-list">    
                     <li><i class="fa fa-caret-right"></i><a href="/innehall/">Innehållet</a></li>
                     <li><i class="fa fa-caret-right"></i><a href="/prenumerera/">Prenumerera</a></li>

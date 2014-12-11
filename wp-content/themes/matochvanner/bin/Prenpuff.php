@@ -141,7 +141,7 @@ class Prenpuff {
           $link = get_field('page_link');
         }
         $out .= <<<OUT
-        <div class="prenpuff">
+        <div class="prenpuff content-box">
               <a href="$link" alt="">$img</a>
         </div>              
 OUT;

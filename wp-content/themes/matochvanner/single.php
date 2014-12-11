@@ -22,7 +22,7 @@ if (is_single() && check_category_family($categories, $bloggParentCatIds)) {
         ?>
         <div class="row">
           <div class="col-md-12">
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class('content-box'); ?>>
               <h1><?php the_title(); ?></h1>
               <span class="article-cat"><?php
                 $showCat = true;
@@ -35,26 +35,22 @@ if (is_single() && check_category_family($categories, $bloggParentCatIds)) {
             </article>
           </div>  
         </div>  
-              <?php $print = false; include 'snippets/related_posts.php'; ?>
-
+            <?php $print = false; include 'snippets/related_posts.php'; ?>
         <?php
       endwhile;
     endif;
     ?>
 
+    <div class="content-box">
+      relaterade
+      <?php  echo $out; ?>
+    </div>
+
     <div class="row">
       <div class="col-md-12">
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("ad-post-loop")) : endif; ?>
       </div>  
-    </div>      
-
-
-
-
-    <div>
-      relaterade
-      <?php  echo $out; ?>
-    </div>
+    </div>   
 
 
   </div>
